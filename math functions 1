@@ -1,13 +1,17 @@
 #include<stdio.h>
-int main()
+#include<math.h>
+int main() 
 {
-    float num = 76.78;
-    int a=16;
-    int b=2;
-    int c=3;
-    printf("%d\n",(int)num);
-    printf("%d\n",(int)num+1);
-    printf("%d\n",a/b/b);
-    printf("%d\n",b*c+b);
+    double floatValue;
+    int squareValue, baseValue, powerValue;
+    scanf("%lf %d %d %d", &floatValue, &squareValue, &baseValue, &powerValue);
+    double floorValue = floor(floatValue);
+    double ceilValue = ceil(floatValue);
+    double sqrtValue = sqrt(squareValue);
+    double powValue = pow(baseValue, powerValue);
+    printf("%.0lf\n", floorValue);
+    printf("%.0lf\n", ceilValue);
+    printf("%.0lf\n", sqrtValue);
+    printf("%.0lf\n", powValue);
     return 0;
 }
