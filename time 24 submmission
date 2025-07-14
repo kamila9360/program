@@ -1,15 +1,15 @@
-#include <stdio.h>
-int main()
-{
-    int hours=1;
-    int minutes=15;
-    int seconds=10;
-    minutes+= seconds/60;
-    seconds =seconds%60;
-    hours +=minutes/60;
-    minutes =minutes%60;
-    printf("Total Number of hours is %d\n",hours);
-    printf("Total Number of minutes is %d\n",minutes);
-    printf("Total Number of seconds is %d\n",seconds);
+#include<stdio.h>
+int main() {
+    int h, m, s;
+    scanf("%d", &h);
+    scanf("%d", &m);
+    scanf("%d", &s);
+    m=m+(s/60);
+    s=s%60;
+    h=h+(m/60);
+    m=m%60;
+    printf("Total Number of hours is %d\n", h);
+    printf("Total Number of minutes is %d\n", m);
+    printf("Total Number of seconds is %d\n", s);
     return 0;
 }
