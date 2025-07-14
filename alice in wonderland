@@ -1,11 +1,10 @@
-#include<stdio.h>
-int main()
-{
-    int a,b;
-    int n=23;
-    a = n/10;
-    b = n%10;
-    printf("Bird said:%d\n",n);
-    printf("Alice must go in path-%d\n",a+b);
+#include <stdio.h>
+int main() {
+    int number;
+    scanf("%d", &number);
+    int sum_of_digits = (number / 10) + (number % 10);
+    printf("Bird said:%d\n", number);
+    printf("Alice must go in path-%d\n", sum_of_digits);
     return 0;
 }
+    
